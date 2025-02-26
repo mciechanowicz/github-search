@@ -1,0 +1,49 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "prettier", "import", "simple-import-sort"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "endOfLine": "lf", "tabWidth": 2, "useTabs": false }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      { "max": 1, "maxEOF": 0, "maxBOF": 0 }
+    ],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "react/react-in-jsx-scope": "off",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["^react", "^next"],
+          ["^@?\\w"],
+          ["^@/components"],
+          ["^@/lib"],
+          ["^@/styles"],
+          ["^@/"],
+          ["^\\."],
+          ["^.+\\.s?css$"]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
+  },
+  "parser": "@typescript-eslint/parser"
+}
