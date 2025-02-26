@@ -6,8 +6,5 @@
   "bracketSpacing": true,
   "singleQuote": true,
   "trailingComma": "all",
-  "endOfLine": "lf",
-  "plugins": [
-    "prettier-plugin-tailwindcss"
-  ]
+  "endOfLine": "lf"
 }
