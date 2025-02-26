@@ -1,3 +1,4 @@
+import { QueryProvider } from '@/providers/QueryProvider';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -30,7 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.variable}>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          <QueryProvider>
+            <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          </QueryProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
