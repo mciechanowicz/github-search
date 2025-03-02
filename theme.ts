@@ -9,6 +9,15 @@ const theme = createTheme({
   palette: {
     mode: 'light',
   },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: 'none',
+        },
+      },
+    },
+  },
 });
 
 export default theme;
