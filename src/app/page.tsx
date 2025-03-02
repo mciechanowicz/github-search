@@ -1,9 +1,15 @@
-import { Container, Typography } from '@mui/material';
+'use client';
 
-export default function Home() {
+import { Container } from '@mui/material';
+
+import UserSearch from '@/components/UserSearch/UserSearch';
+
+const HomePage = () => {
   return (
-    <Container>
-      <Typography variant="h1">Init</Typography>
+    <Container maxWidth="lg">
+      <UserSearch />
     </Container>
   );
-}
+};
+
+export default HomePage;
