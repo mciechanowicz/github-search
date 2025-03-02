@@ -4,4 +4,4 @@ export const API_ENDPOINTS = {
   },
 };
 
-export const DEBOUNCE_DELAY = 4000;
+export const DEBOUNCE_DELAY = 2000;
