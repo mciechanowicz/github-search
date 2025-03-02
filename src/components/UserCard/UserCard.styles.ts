@@ -17,7 +17,7 @@ const styles: Record<string, SxProps<Theme>> = {
     maxWidth: { xs: '250px', sm: '100%' },
     color: '#64748b',
     '&:hover': {
-      color: '#000',
+      color: '#000000',
     },
   },
   link: {

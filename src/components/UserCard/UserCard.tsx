@@ -7,7 +7,7 @@ import {
   Typography,
 } from '@mui/material';
 
-import styles from '@/components/UserCard/styles';
+import styles from '@/components/UserCard/UserCard.styles';
 
 import { translations } from '@/translations';
 import { User } from '@/types/api';
