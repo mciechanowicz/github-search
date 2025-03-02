@@ -19,7 +19,6 @@ export const getUsers = async (
       {
         headers: {
           Accept: 'application/vnd.github+json',
-          // Authorization: `Bearer ${token}`,
         },
         params: {
           q: username,
