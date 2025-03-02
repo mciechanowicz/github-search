@@ -65,7 +65,6 @@ const UserSearch = () => {
           },
         }}
       />
-      <Typography>{errors.username?.message}</Typography>
       <UserList
         users={data || []}
         isLoading={isLoading}
