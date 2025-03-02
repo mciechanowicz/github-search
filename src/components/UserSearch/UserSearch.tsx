@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { useDebounce } from 'use-debounce';
 
-import styles from '@/components/UserSearch/styles';
+import styles from '@/components/UserSearch/UserSearch.styles';
 
 import { DEBOUNCE_DELAY } from '@/constants';
 import useGitHubSearch from '@/hooks/useGithubSearch';
@@ -37,6 +37,7 @@ const UserSearch = () => {
     error,
     hasNextPage,
     fetchNextPage,
+    handleRetry,
   } = useGitHubSearch(isValid ? debouncedUsername : '');
 
   const isInputPending = isValid && username !== debouncedUsername;
@@ -70,7 +71,8 @@ const UserSearch = () => {
         isLoading={isLoading}
         error={error}
         hasNextPage={hasNextPage}
-        fetchNextPage={fetchNextPage}
+        onFetchNextPage={fetchNextPage}
+        onRetry={handleRetry}
       />
     </Box>
   );

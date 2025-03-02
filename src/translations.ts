@@ -11,5 +11,8 @@ export const translations = {
   userList: {
     emptyList: 'No users found!',
     linkTitle: 'View Profile',
+    requestLimitReached:
+      'The limit of requests to the GitHub API has been reached. Try again in a minute.',
+    fetchMoreButton: 'Fetch more',
   },
 };
