@@ -7,7 +7,7 @@ import {
   User,
 } from '@/types/api';
 
-export const RESULTS_PER_PAGE = 30;
+export const RESULTS_PER_PAGE = 50;
 
 export const getUsers = async (
   username: string,
@@ -17,9 +17,6 @@ export const getUsers = async (
     const response = await api.get<GitHubSearchResponseBE>(
       API_ENDPOINTS.SEARCH.USERS,
       {
-        headers: {
-          Accept: 'application/vnd.github+json',
-        },
         params: {
           q: username,
           page,
