@@ -76,4 +76,4 @@ All project requirements have been met.
 
 ## Live version
 
-- The app is live and can be accessed at:
+- The app is live and can be accessed at: [https://github-search-mciechanowicz1s-projects.vercel.app/](https://github-search-mciechanowicz1s-projects.vercel.app/)
